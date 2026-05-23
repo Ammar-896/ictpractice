@@ -467,7 +467,7 @@ export default function App() {
             <div style={{textAlign:'center',marginBottom:28}}>
               <p style={{fontFamily:SERIF,fontSize:9,color:GOLD+'88',letterSpacing:5,marginBottom:4,textTransform:'uppercase'}}>The Royal Library</p>
               <h2 style={{fontFamily:SERIF,fontSize:21,color:GOLD,margin:0,fontWeight:400,letterSpacing:3}}>Select a Subject to Study</h2>
-              <Divider />
+              <Divider color="GOLD" />
             </div>
             {TOPICS.map(topic => {
               const note=NOTES[topic.id], open=openNote===topic.id;

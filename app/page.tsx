@@ -189,7 +189,7 @@ async function gradeExam(questions, answers, apiKey) {
       try {
         const res = await fetch('https://api.groq.com/openai/v1/chat/completions', {
           method:'POST', headers:{'Content-Type':'application/json','Authorization':'Bearer ' + apiKey},
-          body: JSON.stringify({ model:'llama3-8b-8192', max_tokens:250, messages:[{ role:'user',
+          body: JSON.stringify({ model:'llama-3.1-8b-instant', max_tokens:250, messages:[{ role:'user',
             content:'Grade this ICT answer for a secondary school student age 11-14.\nQuestion: ' + q.q + '\nMark Scheme: ' + q.rubric + '\nStudent Answer: ' + (answers[q.id]||'blank') + '\nRespond ONLY in JSON no markdown: {"marks":0,"feedback":"1-2 sentences"}\nMarks: 0=blank or wrong, 1=partial, 2=good, 3=excellent'
           }] }),
         });

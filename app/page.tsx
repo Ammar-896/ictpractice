@@ -527,7 +527,7 @@ export default function App() {
                   <p style={{fontFamily:SERIF,fontSize:9,color:GOLD+'88',letterSpacing:5,marginBottom:4,textTransform:'uppercase'}}>The Royal Examination Hall</p>
                   <h2 style={{fontFamily:SERIF,fontSize:21,color:GOLD,margin:0,fontWeight:400,letterSpacing:3}}>Choose Your Subject</h2>
                   <p style={{fontFamily:BODY,color:'#5a4a6a',fontSize:16,fontStyle:'italic',marginTop:8}}>A royal house is drawn at random — questions are reshuffled anew each attempt</p>
-                  <Divider />
+                  <Divider color="GOLD" />
                 </div>
                 <div style={{display:'grid',gridTemplateColumns:'repeat(auto-fill,minmax(200px,1fr))',gap:14,marginBottom:28}}>
                   {TOPICS.map(topic => (

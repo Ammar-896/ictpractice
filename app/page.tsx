@@ -1,3 +1,5 @@
+"use client";
+
 import { useState } from "react";
 
 const shuffle = a => [...a].sort(() => Math.random() - 0.5);
